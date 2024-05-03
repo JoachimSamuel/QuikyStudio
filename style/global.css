@@ -17,19 +17,17 @@
 
 * {
   margin: 0;
-  padding: 0;
   background-color: var(--bleuClaire);
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
   color: var(--bleuLogo);
   font-size: 60px;
   font-weight: bold;
 }
 
 p {
-  font-family: "Poppins", sans-serif;
   color: var(--noir);
   font-size: 17px;
 }
