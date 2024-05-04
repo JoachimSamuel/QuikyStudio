@@ -1,0 +1,129 @@
+/***************** HERO SECTION ******************/
+
+/*Creation de l'ecrand d'ordinateur */
+.ecrand-ordi {
+  background-color: var(--blanc);
+  width: 80vw;
+  aspect-ratio: 16/9;
+  position: absolute; /* Add this */
+  top: 53%; /* Add this */
+  left: 50%; /* Add this */
+  transform: translate(-50%, -50%); /* Add this */
+  box-shadow: 0px 28.432px 56.864px -13.647px rgba(0, 0, 0, 0.25);
+  border-radius: 8.476px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.nav-menu-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cercles {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cercle {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border: solid 0, 42px;
+}
+.cercle-1 {
+  background-color: rgba(238, 106, 95, 1);
+  border-color: rgba(206, 83, 71, 1);
+}
+.cercle-2 {
+  background-color: rgba(245, 189, 79, 1);
+  border-color: rgba(214, 162, 67, 1);
+}
+.cercle-3 {
+  background-color: rgba(97, 196, 84, 1);
+  border-color: rgba(97, 196, 84, 1);
+}
+
+.nav-menu-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.search-bar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  padding: 5px 10px 5px 30px;
+  gap: 150px;
+}
+.cercle-masque {
+  color: rgba(0, 0, 0, 0.05);
+}
+.search-bar-center {
+  display: flex;
+  gap: 0.5rem;
+}
+.search-bar p,
+.search-bar img {
+  color: var(--noir);
+}
+.search-bar p {
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.044px;
+}
+.nav-menu-right {
+  display: flex;
+  gap: 1rem;
+}
+/*Mise en place des elments dans la fenetre */
+
+.content-ecrand {
+  display: flex;
+  gap: 93px;
+  padding: 87px;
+}
+
+.content-ecrand-right-gouteLogo {
+  width: 25.461px;
+  height: 29.233px;
+  transform: rotate(4.627deg);
+  position: absolute;
+}
+.content-ecrand-right-title {
+  flex-shrink: 0;
+}
+.content-ecrand-right h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.content-ecrand-right p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.container-cta {
+  display: flex;
+  gap: 9px;
+  margin-top: 3rem;
+}
+
+/*Mise en place des telephone autour de la fenetre */
+
+.hero-tel-1 {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+.hero-tel-2 {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+}

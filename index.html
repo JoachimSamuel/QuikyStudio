@@ -15,50 +15,150 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-container">
-        <a href="#" id="logo">
-          <img
-            src="./public/Logo/Logo1_QuikyStudio.svg"
-            alt="Logo Quikiytudio"
-          />
-        </a>
-        <ul class="nav-bar">
-          <li><a href="./pages/webSite_page/siteWeb.html">Site Internet</a></li>
-          <li>
-            <a href="./pages/creationsGraphiques_page/creationraphique.html"
-              >Créations Graphiques</a
-            >
-          </li>
-          <li>
-            <a href="./pages/communityManagement_page/communityManagement.html"
-              >Community Management</a
-            >
-          </li>
-          <li>
-            <a href="#" class="dropdown-toggle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="12"
-                viewBox="0 0 4 12"
-                fill="none"
+    <header>
+      <nav>
+        <div class="nav-container">
+          <a href="#" id="logo">
+            <img
+              src="./public/Logo/Logo1_QuikyStudio.svg"
+              alt="Logo Quikiytudio"
+            />
+          </a>
+          <ul class="nav-bar">
+            <li>
+              <a href="./pages/webSite_page/siteWeb.html">Site Internet</a>
+            </li>
+            <li>
+              <a href="./pages/creationsGraphiques_page/creationraphique.html"
+                >Créations Graphiques</a
               >
-                <circle cx="1.52315" cy="1.64815" r="1.52315" fill="#0E2E3E" />
-                <circle cx="1.52315" cy="5.99995" r="1.52315" fill="#0E2E3E" />
-                <circle cx="1.52315" cy="10.3518" r="1.52315" fill="#0E2E3E" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Nos Réalisation</a></li>
-              <li><a href="#">Nous Contacter</a></li>
-              <li><a href="#">Article de blog</a></li>
-              <li><a href="#">Nos Formation</a></li>
-            </ul>
-          </li>
-        </ul>
-        <button>Un projet?</button>
-      </div>
-    </nav>
+            </li>
+            <li>
+              <a
+                href="./pages/communityManagement_page/communityManagement.html"
+                >Community Management</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dropdown-toggle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="4"
+                  height="12"
+                  viewBox="0 0 4 12"
+                  fill="none"
+                >
+                  <circle
+                    cx="1.52315"
+                    cy="1.64815"
+                    r="1.52315"
+                    fill="#0E2E3E"
+                  />
+                  <circle
+                    cx="1.52315"
+                    cy="5.99995"
+                    r="1.52315"
+                    fill="#0E2E3E"
+                  />
+                  <circle
+                    cx="1.52315"
+                    cy="10.3518"
+                    r="1.52315"
+                    fill="#0E2E3E"
+                  />
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Nos Réalisation</a></li>
+                <li><a href="#">Nous Contacter</a></li>
+                <li><a href="#">Article de blog</a></li>
+                <li><a href="#">Nos Formation</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="button-bleu">Un projet ?</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========================= CONTENT ========================= -->
+    <main>
+      <section id="hero" class="hero">
+        <div class="ecrand-ordi">
+          <div class="nav-menu">
+            <div class="nav-menu-left">
+              <div class="cercles">
+                <div class="cercle cercle-1"></div>
+                <div class="cercle cercle-2"></div>
+                <div class="cercle cercle-3"></div>
+              </div>
+              <img src="./public/Icons/toolbar.svg" alt="Toolbar" />
+              <div class="ordi-arrow">
+                <img src="./public/Icons/left_arrow.svg" alt="left-arrow" />
+                <img src="./public/Icons/right_arrow.svg" alt="right-arrow" />
+              </div>
+            </div>
+            <div class="nav-menu-center">
+              <img src="./public/Icons/shield.svg" alt="shield" />
+              <div class="search-bar">
+                <div class="cercle cercle-masque"></div>
+                <div class="search-bar-center">
+                  <img src="./public/Icons/Lock.svg" alt="lock" />
+                  <p>QuikiyStudio.com</p>
+                </div>
+                <img
+                  src="./public/Icons/arrow-return.svg"
+                  alt="arrow-return"
+                  class="search-bar-arrow-return"
+                />
+              </div>
+            </div>
+            <div class="nav-menu-right">
+              <img src="./public/Icons/download.svg" alt="download" />
+              <img src="./public/Icons/share.svg" alt="share" />
+              <img src="./public/Icons/new_tab.svg" alt="new tab" />
+              <img src="./public/Icons/show_tab.svg" alt="show tab" />
+            </div>
+          </div>
+          <div class="content-ecrand">
+            <img
+              src="./public/images/Group 46675.svg"
+              alt="Group 46675"
+              class="content-ecrand-left"
+            />
+            <div class="content-ecrand-right">
+              <h2>
+                Décuplez votre impact en <span>ligne</span>
+                <img
+                  src="./public/Logo/goutes.svg"
+                  alt="Goutes Logo QuikiyStudio"
+                  class="content-ecrand-right-gouteLogo icon-rouge"
+                />
+              </h2>
+              <p>
+                Chez Quiky Studio nous travaillons avec vous pour rendre votre
+                identité digitale inoubliable !
+              </p>
+              <br />
+              <p>
+                Nous sommes là à chaque étape pour faire briller votre marque
+                comme jamais auparavant
+              </p>
+              <div class="container-cta">
+                <button class="button-bleu" @click="goToContact()">
+                  Devis Gratuit
+                </button>
+                <button class="button-white-orange" @click="goToContact()">
+                  <img src="public/Icons/calendar.svg" alt="Calender" />
+                  RENDEZ-VOUS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="hero-tel-1" src="./public/images/Iphone 1.png" alt="" />
+        <img class="hero-tel-2" src="./public/images/Iphone 1.png" alt="" />
+      </section>
+    </main>
   </body>
 </html>

@@ -17,17 +17,48 @@
 
 * {
   margin: 0;
-  background-color: var(--bleuClaire);
   font-family: "Poppins", sans-serif;
 }
-
-h1 {
-  color: var(--bleuLogo);
-  font-size: 60px;
-  font-weight: bold;
+body {
+  background-color: var(--bleuClaire);
+  color: var(--noir);
 }
 
+h2 {
+  color: var(--bleuLogo);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 103.167%;
+}
+h2 span {
+  color: var(--orangeLogo);
+}
 p {
   color: var(--noir);
   font-size: 17px;
+}
+
+/* Gestion des Buttons */
+button {
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  padding: 9px 12px;
+  font-family: "Inter", sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+.button-bleu {
+  color: var(--blanc);
+  background-color: var(--bleuLogo);
+}
+.button-white-orange {
+  color: var(--orangeLogo);
+  background-color: var(--blanc);
+  border: solid 1px var(--orangeLogo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }

@@ -2,14 +2,15 @@
   position: fixed;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  top: 0;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(2px);
-  display: inline-flex;
-  padding: 16px;
-  justify-content: center;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
   align-items: center;
   gap: 250px;
+  z-index: 9999999999999;
 }
 
 .nav-container img {
@@ -37,7 +38,7 @@ li a {
   font-family: "Inter", sans-serif;
 }
 li a:hover {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   color: var(--bleuLogo);
   border-radius: 35px;
   background: var(--blanc);
@@ -46,10 +47,10 @@ li a:hover {
   position: absolute;
   top: 65%;
   display: none;
-  background-color: var(--bleuLogo);
+  background-color: var(--bleu);
   border-radius: 15px;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 .dropdown-menu li {
   pointer-events: auto;
@@ -60,14 +61,4 @@ li a:hover {
 }
 .dropdown-menu li :first-child {
   margin-top: 260px;
-}
-
-nav button {
-  background-color: var(--bleuLogo);
-  font-size: 15px;
-  border-radius: 99px;
-  border: none;
-  padding: 10px 12px;
-  font-family: "Inter", sans-serif;
-  color: var(--blanc);
 }
