@@ -29,13 +29,15 @@ h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 103.167%;
+  letter-spacing: -1.7px;
 }
 h2 span {
   color: var(--orangeLogo);
 }
 p {
-  color: var(--noir);
   font-size: 17px;
+  line-height: 140%;
+  font-weight: 400;
 }
 
 /* Gestion des Buttons */
@@ -45,6 +47,10 @@ button {
   border: none;
   padding: 9px 12px;
   font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 button:hover {
   cursor: pointer;
@@ -61,4 +67,19 @@ button:hover {
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+
+/* Gestion des Section*/
+section {
+  margin-bottom: 100px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 46px;
+  padding: 1.5rem 3.25rem;
+  background-color: var(--blanc);
 }
