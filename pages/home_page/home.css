@@ -138,6 +138,8 @@
 /******** Notre Mission ********/
 .container-mission {
   justify-content: flex-end;
+  padding: 1.5rem 3.25rem;
+  padding-bottom: 3rem;
 }
 .text-mission {
   display: flex;
@@ -148,6 +150,7 @@
 .text-mission button {
   width: 25%;
   margin: 0 30%;
+  padding: 13px 19px;
 
   color: var(--blanc);
   background-color: var(--bleuLogo);
@@ -192,4 +195,84 @@
 }
 .nosService-title p {
   margin-bottom: 16px;
+}
+
+/******** Section des cartes ********/
+.container-nosServices-card {
+  background-image: url("/public/Icons/ligne_background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.card-nosServices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 48px;
+  background-color: var(--blanc);
+  padding: 25px;
+  padding-top: 74px;
+}
+.icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 38px;
+  background-color: var(--bleuClaire);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  top: -70px;
+}
+
+.card-nosServices-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.card-nosServices-title span {
+  color: var(--bleuLogo);
+}
+
+.card-nosServices-description {
+  width: 25ch;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.arrow-card-nosService {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: var(--bleuLogo);
+}
+
+.card-nosService-milieu h3 {
+  font-size: 28px;
+}
+.card-nosService-milieu .card-nosServices-description p {
+  font-size: 17px;
+}
+
+.card-nosService-milieu span {
+  color: var(--orangeLogo);
+}
+.arrow-card-nosService-milieu {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: var(--orangeLogo);
+}
+.text-transition-cool {
+  color: var(--bleuLogo);
+  margin-top: 53px;
 }

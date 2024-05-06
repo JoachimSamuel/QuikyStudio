@@ -32,14 +32,22 @@ h2 {
   letter-spacing: -1.7px;
 }
 h2 span {
+  font-size: 55px;
   color: var(--orangeLogo);
+  background-color: var(--blanc);
+  border-radius: 15px;
+  padding: 0 0.6rem;
 }
 p {
   font-size: 17px;
   line-height: 140%;
   font-weight: 400;
 }
-
+a {
+  color: var(--noir);
+  text-decoration: none;
+  cursor: pointer;
+}
 /* Gestion des Buttons */
 button {
   font-size: 15px;
@@ -76,10 +84,38 @@ section {
 .container {
   display: flex;
   align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 46px;
+  background-color: var(--blanc);
+}
+
+.rond-fleche-bas {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--blanc);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+.arrow-down {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 46px;
-  padding: 1.5rem 3.25rem;
   background-color: var(--blanc);
 }
