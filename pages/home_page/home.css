@@ -138,8 +138,6 @@
 /******** Notre Mission ********/
 .container-mission {
   justify-content: flex-end;
-  padding: 1.5rem 3.25rem;
-  padding-bottom: 3rem;
 }
 .text-mission {
   display: flex;
@@ -204,6 +202,7 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 100px;
 }
 .card-nosServices {
@@ -217,6 +216,7 @@
   padding: 25px;
   padding-top: 74px;
 }
+
 .icon-card {
   display: flex;
   justify-content: center;
@@ -275,4 +275,96 @@
 .text-transition-cool {
   color: var(--bleuLogo);
   margin-top: 53px;
+}
+
+/******************************************* TEAMS ********************************************/
+.conatiner-team {
+  flex-direction: column;
+  gap: 50px;
+  padding-right: 0.5rem;
+}
+.conatiner-team button {
+  font-family: "Inter", sans-serif;
+  padding: 1rem;
+  font-weight: 500;
+}
+.card-team {
+  display: flex;
+  margin-top: 20px;
+  gap: 1rem;
+}
+.team-container {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+.team-container img {
+  width: 14rem;
+  height: 23.5rem;
+  border-radius: 17px;
+  transform: rotate(-3.357deg);
+  object-fit: cover;
+  margin-top: 1rem;
+}
+.team-text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.team-text h3 {
+  color: var(--bleuLogo);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.68px;
+}
+.team-text p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.32px;
+}
+.team-post {
+  font-style: 14px !important;
+  font-weight: 600 !important;
+}
+
+.team-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.team-tags p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px; /* 180% */
+  background-color: var(--bleuClaire);
+  text-align: center;
+  border-radius: 27px;
+  margin: 0;
+  padding: 0px 15px;
+}
+.team-text a p {
+  margin-top: 1.5rem;
+  color: var(--bleuLogo);
+  font-size: 17px;
+  font-weight: 600;
+}
+.team-tags p::first-letter {
+  font-size: 17px;
+}
+.team-text-orange h3 {
+  color: var(--orangeLogo);
+}
+.team-tags-orange p {
+  background-color: var(--orangeClaire);
+}
+.team-text-orange a p {
+  color: var(--orangeLogo);
+}
+.team-text-orange a {
+  display: flex;
+  align-items: center;
+}
+.team-text-orange a img {
+  height: 20px;
 }

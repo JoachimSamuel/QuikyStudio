@@ -9,9 +9,13 @@
     <!--Import CSS -->
     <link href="./style/global.css" rel="stylesheet" />
     <link href="./pages/header/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./components/projets_components.css">
     <link href="./style/footer.css" rel="stylesheet" />
 
     <link href="./pages/home_page/home.css" rel="stylesheet" />
+
+
+
   </head>
 
   <body>
@@ -256,6 +260,73 @@
         </div>
         <p class="text-transition-cool">Votre Marque va rayonner comme un soleil tropical &#128262  &#127796</p>
       </section>
+
+      <!-- ========================= TEAM ========================= -->
+      <section class="container conatiner-team" id="teams">
+        <h2><span>L’équipe </span>qui fait la <span>différence</span></h2>
+        <div class="card-team">
+        <div class="team-container">
+          <img src="./public/images/Joacim_Samuel.jpg" alt="Joachim SAmuel">
+          <div class="team-text">
+            <h3>Samuel Joachim </h3>
+            <p class="team-post">COCRÉATEUR</p>
+            <p>Formé en web design, il gère les interfaces comme personne. Les langages du code n’ont plus de secret pour lui </p>
+            <div class="team-tags">
+                <p> 👨🏽‍💻‍ Web Design</p>
+                <p> 🌿 Green Code</p>
+                <p>⚙️ Développement Web</p>
+                <p> 🎯 Référencement</p>
+                <p>🎬 Vidéo, Son & Photo </p>
+                <p>📲 Responsive</p>
+            </div>
+            <a href=""><p>Suivre sur Linkedin</p></a>
+          </div>
+        </div>
+
+        <div class="team-container">
+          <img src="./public/images/Anais_Freminet.jpg" alt="Joachim SAmuel"><!-- ======== EN Attente du bon fichier de bonne qualité ========= -->
+          <div class="team-text team-text-orange">
+            <h3>Anaïs Freminet </h3>
+            <p class="team-post">COCRÉATEUR</p>
+            <p>Diplômée d’un master, elle vous concoctent des stratégies sur mesure, aussi savoureuses qu'un bon smoothie aux fruits exotiques</p>
+            <div class="team-tags team-tags-orange">
+                <p>📱 Réseaux Sociaux</p>
+                <p>🎨 Design</p>
+                <p>🌈 Boîte à idée</p>
+                <p>📸 Photo & Vidéo</p>
+                <p>👨🏽‍💻‍ Coomunication & Marketing</p>
+            </div>
+            <a href=""><p>Suivre sur Linkedin</p></a>
+          </div>
+        </div>
+      </div>
+      <button class="button-bleu">Prendre Rendez-vous</button>
+      </section>
+<!-- ========================= Projets ========================= -->
+<section id="projets" class="porjets-container">
+  <h2>
+    Les <span>Sucess</span> Stories<img
+      src="./public/Logo/goute°quiky_beige.svg"
+      alt="Goutes Logo QuikiyStudio"
+      class="content-ecrand-right-gouteLogo icon-rouge"
+    />
+  </h2>
+  <p>Quelques unes de nos réalisations sur lesquelles nous avons travaillé avec ❤️ pour nos clients</p>
+  <div class="slider">
+    <div><img src="./public/images/Joacim_Samuel.jpg" alt="Image 1"></div>
+    <div><img src="./public/images/Joacim_Samuel.jpg" alt="Image 2"></div>
+    <div><img src="./public/images/Joacim_Samuel.jpg" alt="Image 3"></div>
+    <!-- Ajoutez d'autres diapositives ici -->
+  </div>
+  <a href="./pages/nosProjets_page/projets.html" class="btn-nosRealisation">Toutes nos réalisations</a>
+</section>
+<!-- ========================= Retours Clients========================= -->
+<section class="conteainner-retours-clients">
+  <h2>Ce que nos <span>clients</span> disent de nous</h2>
+  <div id="slider-retour-client" class="slider-retour-client"></div>
+</section>
     </main>
   </body>
+  <script type="module" src="./scripts/dataFetcher.js"></script>
+ <script type="module" src="./scripts/displayDataClients.js"></script>
 </html>
