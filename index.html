@@ -8,83 +8,15 @@
 
     <!--Import CSS -->
     <link href="./style/global.css" rel="stylesheet" />
-    <link href="./pages/header/header.css" rel="stylesheet" />
+    <link href="./components/header/header.css" rel="stylesheet" />
     <link rel="stylesheet" href="./components/projets_components.css">
     <link href="./style/footer.css" rel="stylesheet" />
 
     <link href="./pages/home_page/home.css" rel="stylesheet" />
 
-
-
   </head>
 
   <body>
-    <header>
-      <nav>
-        <div class="nav-container">
-          <a href="#" id="logo">
-            <img
-              src="./public/Logo/Logo1_QuikyStudio.svg"
-              alt="Logo Quikiytudio"
-            />
-          </a>
-          <ul class="nav-bar">
-            <li>
-              <a href="./pages/webSite_page/siteWeb.html">Site Internet</a>
-            </li>
-            <li>
-              <a href="./pages/creationsGraphiques_page/creationraphique.html"
-                >Créations Graphiques</a
-              >
-            </li>
-            <li>
-              <a
-                href="./pages/communityManagement_page/communityManagement.html"
-                >Community Management</a
-              >
-            </li>
-            <li>
-              <a href="#" class="dropdown-toggle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="4"
-                  height="12"
-                  viewBox="0 0 4 12"
-                  fill="none"
-                >
-                  <circle
-                    cx="1.52315"
-                    cy="1.64815"
-                    r="1.52315"
-                    fill="#0E2E3E"
-                  />
-                  <circle
-                    cx="1.52315"
-                    cy="5.99995"
-                    r="1.52315"
-                    fill="#0E2E3E"
-                  />
-                  <circle
-                    cx="1.52315"
-                    cy="10.3518"
-                    r="1.52315"
-                    fill="#0E2E3E"
-                  />
-                </svg>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Nos Réalisation</a></li>
-                <li><a href="#">Nous Contacter</a></li>
-                <li><a href="#">Article de blog</a></li>
-                <li><a href="#">Nos Formation</a></li>
-              </ul>
-            </li>
-          </ul>
-          <button class="button-bleu">Un projet ?</button>
-        </div>
-      </nav>
-    </header>
-
     <!-- ========================= CONTENT ========================= -->
     <main>
       <section id="hero" class="hero">
@@ -321,12 +253,25 @@
   <a href="./pages/nosProjets_page/projets.html" class="btn-nosRealisation">Toutes nos réalisations</a>
 </section>
 <!-- ========================= Retours Clients========================= -->
-<section class="conteainner-retours-clients">
-  <h2>Ce que nos <span>clients</span> disent de nous</h2>
-  <div id="slider-retour-client" class="slider-retour-client"></div>
+<section id="projects">
+  <h2>Ce que nos <span>clients</span>disent de nous</h2>
+    <div class="wrapper">
+      <div class="inner">
+        <!-- Les cartes des projets seront affichées ici -->
+      </div>
+    </div>
+</section>
+<section id="subscribe-newsletter" class="subscribe-newsletter">
+      <h2>S’abonner à notre newsletter</h2>
+      <form id="downloadForm" class="form-newsletter">
+      <input type="text" id="name" name="name" placeholder="Nom"  required><br><br>
+      <input type="email" id="email" name="email" placeholder="jean@gmail.com"  required><br><br>
+      <button type="submit">Télécharger le fichier</button>
+    </form>
 </section>
     </main>
   </body>
-  <script type="module" src="./scripts/dataFetcher.js"></script>
- <script type="module" src="./scripts/displayDataClients.js"></script>
+ <script type="module" src="./scripts/retourClient.js"></script>
+ <script src="./components/header/header.js"></script>
+ <script src="./scripts/newsLetterform.js"></script>
 </html>

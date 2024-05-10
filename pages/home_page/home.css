@@ -368,3 +368,73 @@
 .team-text-orange a img {
   height: 20px;
 }
+
+/******************************************* NEWSLETTER********************************************/
+.subscribe-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--orangeLogo);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-newsletter::before {
+  content: "";
+  width: 278.863px;
+  height: 229.351px;
+  border: 5px var(--orangeClaire) solid;
+  transform: rotate(-35.118deg);
+  border-radius: 50%;
+  position: absolute;
+  top: -110px;
+  left: -150px;
+}
+.subscribe-newsletter::after {
+  content: "";
+  width: 278.863px;
+  height: 229.351px;
+  border: 5px var(--orangeClaire) solid;
+  transform: rotate(-35.118deg);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -130px;
+  right: -150px;
+}
+.subscribe-newsletter h2 {
+  color: var(--blanc);
+}
+.form-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.form-newsletter input {
+  border-radius: 10px;
+  padding: 20px;
+  border: white 1px solid;
+  background-color: var(--orangeLogo);
+  color: var(--blanc);
+  font-size: 16px;
+  width: 271px;
+}
+.form-newsletter #email::placeholder,
+.form-newsletter #name::placeholder {
+  color: var(--blanc);
+}
+
+.form-newsletter button {
+  background-color: var(--orangeClaire);
+  color: var(--orangeLogo);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 23px;
+  border-radius: 10px;
+  width: 271px;
+}

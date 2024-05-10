@@ -49,3 +49,108 @@
   font-size: 16.2px;
   font-weight: 600;
 }
+
+/******************************************* NOS Réalisation (sur toute les pages )********************************************/
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+/*.wrapper {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}*/
+.card-carrousel {
+  display: flex;
+  flex: 0 0 40%; /* Largeur de chaque carte */
+  margin: 10px;
+  background-color: #e4faff;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.card-carrousel img {
+  width: 206px;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 7.5px;
+  margin-right: 29px;
+  position: relative;
+}
+.image-container {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 30px !important;
+}
+
+.card-carrousel.with-logo .image-container {
+  position: relative;
+}
+
+.card-carrousel.with-logo .image-container::before {
+  content: url(../public/Logo/goute_quiky_bleu.svg); /* Remplacez 'URL_de_votre_logo' par l'URL de votre logo */
+  position: absolute;
+  right: 40px; /* Ajustez la position selon vos besoins */
+  top: 15px;
+  z-index: 9999999;
+  width: 30px;
+}
+
+.card-carrousel h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-carrousel h5 {
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.card-carrousel p {
+  color: var(--noir);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 186.667% */
+}
+.card-retourt-client-name-post {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.inner {
+  display: flex;
+  animation: slide 70s infinite ease-in-out;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Création des étoiles */
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 17px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.selected {
+  color: var(--orangeLogo);
+}
