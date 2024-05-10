@@ -1,0 +1,67 @@
+#contac-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#contac-section h2 {
+  position: relative;
+}
+#contac-section h2::after {
+  content: "\1F4EE";
+  font-size: 60px;
+  position: absolute;
+}
+.contac-text-container {
+  width: 40%;
+}
+.text-contact p {
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+.text-contact span {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--blanc);
+  color: var(--bleuLogo);
+  font-weight: 600;
+}
+
+#contac-section form {
+  width: 40%;
+  background-color: var(--blanc);
+  padding: 27px 38px;
+  border-radius: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 5px;
+}
+input {
+  border: none;
+  border-bottom: 1px var(--noir) solid;
+}
+.form-list-input {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.form-btn {
+  width: 100%;
+  background-color: var(--orangeLogo);
+  color: var(--blanc);
+}
+
+.form-btn:hover {
+  background-color: var(--blanc);
+  border: 1px var(--orangeLogo);
+  color: var(--orangeLogo);
+}
