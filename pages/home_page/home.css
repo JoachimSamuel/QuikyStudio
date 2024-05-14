@@ -168,7 +168,7 @@
 .container-chiffre {
   display: flex;
 }
-.chiffre-cle h3 {
+.chiffre-cle span {
   color: var(--orangeLogo);
   font-size: 55.5px;
   font-weight: 700;
