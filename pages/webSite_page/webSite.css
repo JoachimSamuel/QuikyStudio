@@ -1,0 +1,216 @@
+.hero-section-siteWeb {
+  margin-top: 6rem;
+  text-align: center;
+}
+.hero-section-siteWeb h2 {
+  margin-bottom: 28px;
+}
+
+/*Creation de l'ecrand d'ordinateur */
+.ecrand-ordi {
+  background-color: var(--blanc);
+  background-image: url(../../public/images/Body.png);
+  background-repeat: no-repeat;
+  width: 60vw;
+  aspect-ratio: 16/9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  box-shadow: 0px 28.432px 56.864px -13.647px rgba(0, 0, 0, 0.25);
+  border-radius: 8.476px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.nav-menu-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cercles {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cercle {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border: solid 0, 42px;
+}
+.cercle-1 {
+  background-color: rgba(238, 106, 95, 1);
+  border-color: rgba(206, 83, 71, 1);
+}
+.cercle-2 {
+  background-color: rgba(245, 189, 79, 1);
+  border-color: rgba(214, 162, 67, 1);
+}
+.cercle-3 {
+  background-color: rgba(97, 196, 84, 1);
+  border-color: rgba(97, 196, 84, 1);
+}
+
+.nav-menu-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.search-bar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  padding: 5px 10px 5px 30px;
+  gap: 150px;
+}
+.cercle-masque {
+  color: rgba(0, 0, 0, 0.05);
+}
+.search-bar-center {
+  display: flex;
+  gap: 0.5rem;
+}
+.search-bar p,
+.search-bar img {
+  color: var(--noir);
+}
+.search-bar p {
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.044px;
+}
+.nav-menu-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-tel {
+  top: 69%;
+  right: 14%;
+  position: absolute;
+  width: 11vw;
+}
+
+/******************************************* ON S'OCCUPE DU WEB********************************************/
+.on_soccupe_du_web h2 {
+  text-align: center;
+}
+
+.slider-onSoccupeDuWeb {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 39px;
+  margin: 150px 20px;
+  margin-left: 75px;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+.slick-dots {
+  padding-right: 1002px !important;
+  width: 96% !important;
+  margin-top: 30px !important;
+  bottom: -45px !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+}
+.slick-dots li button:before {
+  opacity: 0.5 !important;
+  color: var(--bleuLogo) !important ;
+  -webkit-font-smoothing: antialiased;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: var(--bleuLogo) !important;
+}
+
+/******** Section des cartes ********/
+.onSoccupeDuWeb-card {
+  display: flex !important;
+  width: 250px !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 48px;
+  background-color: var(--blanc);
+  padding: 74px 14px 45px 14px;
+}
+.icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 38px;
+  background-color: var(--bleuClaire);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  top: -70px;
+}
+.onSoccupeDuWeb-card-content h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.onSoccupeDuWeb-card-content p {
+  margin-top: 30px;
+  font-size: 15.5px;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  width: 80%;
+  height: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.5s ease;
+}
+
+.card:nth-child(even) {
+  background-color: #e5e5e5;
+}
+
+.cards:hover .title {
+  transform: translateY(-100%);
+}
+
+.cards:hover .card {
+  transform: translateY(-100%);
+}
