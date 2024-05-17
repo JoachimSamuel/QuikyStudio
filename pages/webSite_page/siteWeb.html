@@ -33,7 +33,7 @@
 
   <body>
     <section class="hero-section-siteWeb">
-      <h2>Créationde <span>Sites Web</span></h2>
+      <h2>Création de <span>Sites Web</span></h2>
       <p>
         Atteignez de nouveaux clients grâce à un site web responsive,
         <strong
@@ -99,7 +99,7 @@
       </h2>
       <div
         class="slider-onSoccupeDuWeb"
-        data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'
+        data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'
       >
         <div class="onSoccupeDuWeb-card">
           <span class="icon-card">💻</span>
@@ -267,8 +267,143 @@
         </div>
       </div>
     </section>
-    <section style="margin-top: 100rem"></section>
+    <section class="price container">
+      <div class="price-title">
+        <h2>Votre <span>Boutique</span> Sûr-Mesure 🎯</h2>
+        <p>
+          Vos services disponibles <strong>24h/24 & 7j/7</strong> , un moyen à
+          votre portée pour faciliter les achats de vos futurs clients et
+          <strong> augmenter votre chiffre d’affaire.</strong>
+        </p>
+        <span class="toggle"></span>
+      </div>
+      <div class="price-text-card">
+        <div class="price-text">
+          <h3>
+            <span>Supprimer</span> les
+            <span class="bg-bleu">contraintes</span> géographiques
+          </h3>
+          <p>
+            Atteignez de nouveaux clients, apprenez de leurs habitudes d’achats
+            et améliorer leur expérience pour les fidéliser
+          </p>
+          <br />
+          <p>Une étape essentielle de votre tunnel de vente !</p>
+        </div>
+        <div class="price-card-container">
+          <div class="price-card">
+            <h4>E-Commerce</h4>
+            <p>À partir de</p>
+            <span>2 500€</span>
+            <ul>
+              <li>
+                <p>Site Responsive</p>
+              </li>
+              <li>
+                <p>Design 100% personnalisé</p>
+              </li>
+              <li>
+                <p>Référencement SEO</p>
+              </li>
+              <li>
+                <p>Module de paiement sécurisé</p>
+              </li>
+              <li>
+                <p>Formation Spécialisée</p>
+              </li>
+            </ul>
+            <a href="#" class="">Commencer</a>
+          </div>
+          <div class="price-card-2 price-card">
+            <h4>
+              Prestations <br />
+              Supplémentaires
+            </h4>
+            <ul>
+              <li>
+                <p>Maintenance</p>
+              </li>
+              <li>
+                <p>Suivi Analytique</p>
+              </li>
+              <li>
+                <p>Illustration du Site</p>
+              </li>
 
+              <li>
+                <p>Rédaction des contenus</p>
+              </li>
+              <li>
+                <p>???</p>
+              </li>
+            </ul>
+            <a href="#" class="">Et encore +</a>
+          </div>
+        </div>
+      </div>
+      <div class="petitPlus-container">
+        <div class="petitPlus-card">
+          <img src="" alt="" />
+          <p>
+            Prise de <br />
+            Rendez-vous
+          </p>
+        </div>
+        <div class="petitPlus-card">
+          <img src="" alt="" />
+          <p>
+            Rédaction <br />
+            de Blog
+          </p>
+        </div>
+        <div class="petitPlus-card">
+          <img src="" alt="" />
+          <p>Module de Recherche & Filtre</p>
+        </div>
+        <div class="petitPlus-card">
+          <img src="" alt="" />
+          <p>Prise de Rendez-vous</p>
+        </div>
+        <div class="petitPlus-card">
+          <img src="" alt="" />
+          <p>Prise de Rendez-vous</p>
+        </div>
+        <div class="petitPlus-card">
+          <img src="" alt="" />
+          <p>Prise de Rendez-vous</p>
+        </div>
+      </div>
+    </section>
+    <section class="accompagnement">
+      <h2>
+        Comment se passe <br />
+        notre <span>Accopagnement</span> ?
+      </h2>
+      <div class="timeline">
+        <div class="timeline-container timeline-container-left">
+          <div class="timeline-text-box timeline-text-box-left">
+            <h3>étape N°1</h3>
+            <span>Cadrage</span>
+            <p>
+              Une phase d’échange pour exposer vos objectifs et besoins. Nous
+              analysons votre cas et revenons vers vous avec des propositions
+              stratégiques
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container timeline-container-right">
+          <div class="timeline-text-box">
+            <h3>étape N°1</h3>
+            <span>Cadrage</span>
+            <p>
+              Une phase d’échange pour exposer vos objectifs et besoins. Nous
+              analysons votre cas et revenons vers vous avec des propositions
+              stratégiques
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -290,11 +425,11 @@
     <script>
       $(document).ready(function () {
         $(".slider-onSoccupeDuWeb").slick({
-          dots: false,
+          dots: true,
           speed: 900,
           slidesToShow: 4,
           slidesToScroll: 1,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 7000,
         });
       });

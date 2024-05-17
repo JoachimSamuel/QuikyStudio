@@ -222,3 +222,227 @@
   font-size: 17px;
   font-weight: 300;
 }
+
+/******************************************* PRICE ********************************************/
+.price {
+  flex-direction: column;
+  gap: 50px;
+}
+.price-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.price-title p {
+  margin: 0 275px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
+.toggle {
+  appearance: none;
+  position: relative;
+  height: 25px;
+  width: 45px;
+  background-color: var(--orangeLogo);
+  border-radius: 16px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--blanc);
+  transition: left 0.2s;
+}
+
+.price-card-container {
+  display: flex;
+  gap: 24px;
+}
+
+.price-text-card {
+  display: flex;
+  justify-content: space-between;
+}
+.price-text {
+  width: 40%;
+}
+.price-text h3 {
+  color: var(--bleuLogo);
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 48px;
+  transform: rotate(-1.72deg);
+}
+.price-text h3 span {
+  color: var(--orangeLogo);
+}
+.price-text h3 span.bg-bleu {
+  background-color: var(--bleuClaire);
+  color: var(--bleuLogo);
+}
+/******** Section des cartes ********/
+.price-card {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bleuLogo);
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--bleuClaire);
+  padding: 30px 35px 30px 35px;
+}
+.price-card h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.price-card span {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 0.1px var(--bleuClaire) solid;
+  width: 150%;
+  padding-bottom: 10px;
+}
+.price-card span::after {
+  font-family: "Inter", sans-serif;
+  content: "HT";
+  font-size: 13px;
+}
+.price-card p {
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  font-size: 16px;
+}
+.price-card ul {
+  padding-left: 0;
+}
+.price-card li:first-child {
+  margin-top: 25px;
+}
+.price-card li {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 12.5px;
+}
+.price-card ul li p::before {
+  content: url(../../public/Icons/white_dote.svg);
+  margin-right: 5px;
+}
+
+.price-card a {
+  background-color: var(--bleuClaire);
+  color: var(--bleuLogo);
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-top: 25px;
+}
+.price-card-2 {
+  background-color: var(--bleuClaire);
+  color: var(--noir);
+  text-align: center;
+}
+.price-card-2 ul li p::before {
+  content: url(../../public/Icons/bleu_dote.svg);
+  margin-top: 10px;
+}
+.price-card-2 a {
+  background-color: var(--bleuLogo);
+  color: var(--bleuClaire);
+}
+
+/******** Section des petit + ********/
+.petitPlus-container {
+  display: flex;
+  gap: 15px;
+}
+.petitPlus-card {
+  background-color: #fffaf2;
+  color: var(--orangeLogo);
+  width: 173px;
+  border-radius: 15px;
+  padding: 24px 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/******************************************* NOTRE ACCOMPAGNEMENT ********************************************/
+.accompagnement {
+  margin-top: 8rem;
+}
+.accompagnement h2 {
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.timeline-container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+.timeline-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.timeline-text-box:first-child {
+  margin-top: 70px;
+}
+.timeline-text-box h3 {
+  color: var(--bleuLogo);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.8px; /* 144% */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+.timeline-text-box span {
+  color: #007999;
+  font-size: 33.07px;
+  font-weight: 600;
+  line-height: 28.8px; /* 87.088% */
+}
+.timeline-text-box p {
+  color: var(--noir);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.timeline-text-box-left {
+  padding-right: 3em;
+  text-align: right;
+}
+.timeline-container-left {
+  padding-left: 0;
+  padding-right: 0;
+  left: 0;
+  border-right: 5px solid var(--bleuLogo);
+}
+
+.timeline-container-right {
+  border-left: 5px solid var(--bleuLogo);
+  left: 50%;
+}
