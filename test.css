@@ -1,0 +1,57 @@
+h1 {
+  color: Red;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+.all-square {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.sqaure {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: solid 3px blueviolet;
+  border-radius: 50px;
+}
+.square-1 {
+  background-color: red;
+}
+.square-2 {
+  background-color: rosybrown;
+
+  width: 30px;
+}
+.flag-card {
+  width: 400px;
+  height: 200px;
+  background-color: blueviolet;
+  border-radius: 15px;
+  border: solid 15px red;
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation-name: spin;
+  animation-duration: 2s; /* Durée
+}
+.flag-card:hover {
+  background-color: blue;
+  cursor: help;
+  transform: rotate(30deg) scale(3.1);
+  animation-name: spin;
+  animation-duration: 12s; /* Durée de l'animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

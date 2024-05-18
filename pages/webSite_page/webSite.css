@@ -398,15 +398,15 @@
   margin: 100px auto;
 }
 .timeline-container {
-  padding: 10px 50px;
   position: relative;
   width: 50%;
+  padding-bottom: 4rem;
 }
 .timeline-text-box {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .timeline-text-box:first-child {
   margin-top: 70px;
@@ -432,8 +432,13 @@
   font-weight: 300;
 }
 .timeline-text-box-left {
-  padding-right: 3em;
   text-align: right;
+  padding-right: 3rem;
+  padding-left: 5rem;
+}
+.timeline-text-box-right {
+  padding-left: 3em;
+  padding-right: 5rem;
 }
 .timeline-container-left {
   padding-left: 0;
@@ -441,8 +446,43 @@
   left: 0;
   border-right: 5px solid var(--bleuLogo);
 }
+.timeline-emoji-left {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: -35px;
+  top: -20px;
+  background-color: var(--bleuClaire);
+  border: 6px solid #007999;
+  border-radius: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline-emoji-left p {
+  font-size: 30px;
+}
 
 .timeline-container-right {
   border-left: 5px solid var(--bleuLogo);
   left: 50%;
+  position: relative;
+}
+.timeline-emoji-right {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: -35px;
+  top: -15px;
+  background-color: var(--bleuClaire);
+  border: 6px solid #007999;
+  border-radius: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline-emoji-right p {
+  font-size: 30px;
 }
