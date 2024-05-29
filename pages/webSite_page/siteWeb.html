@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sites web sur mesure : Votre vitrine digitale unique</title>
+    <link
+      rel="shortcut icon"
+      href="/public/Logo/logo_orange_minifier.svg"
+      type="image/x-icon"
+    />
 
     <!--Import CSS -->
     <link href="../../style/global.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../components/header/header.css" />
     <link rel="stylesheet" href="../../components/nous_contacter/contact.css" />
     <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="../../components/rerour_clients/retourt_clients.css"
+    />
 
     <link href="./webSite.css?v2" rel="stylesheet" />
+    <link rel="stylesheet" href="../../components/faq/faq.css" />
 
     <!--Import Slick slider -->
     <link
@@ -32,6 +42,7 @@
   </head>
 
   <body>
+    <!-- ========================= HERO ========================= -->
     <section class="hero-section-siteWeb">
       <h2>Création de <span>Sites Web</span></h2>
       <p>
@@ -93,6 +104,7 @@
         />
       </div>
     </section>
+    <!-- ========================= ON SOCCUPE DU WEB========================= -->
     <section class="on_soccupe_du_web">
       <h2>
         <span>Vous gérez votre activité,</span><br />On s’occupe du Web 🤝
@@ -203,6 +215,7 @@
         </div>
       </div>
     </section>
+    <!-- ========================= ARGUMENTS========================= -->
     <section class="arguments">
       <div class="fixed-section">
         <div class="text-aguments">
@@ -267,117 +280,254 @@
         </div>
       </div>
     </section>
-    <section class="price container">
-      <div class="price-title">
-        <h2>Votre <span>Boutique</span> Sûr-Mesure 🎯</h2>
-        <p>
-          Vos services disponibles <strong>24h/24 & 7j/7</strong> , un moyen à
-          votre portée pour faciliter les achats de vos futurs clients et
-          <strong> augmenter votre chiffre d’affaire.</strong>
-        </p>
-        <span class="toggle"></span>
-      </div>
-      <div class="price-text-card">
-        <div class="price-text">
-          <h3>
-            <span>Supprimer</span> les
-            <span class="bg-bleu">contraintes</span> géographiques
-          </h3>
+    <!-- ========================= PRICE========================= -->
+    <section class="price container" id="priceSection">
+      <!-- ============= PRICE-Site Vitrine================ -->
+      <div class="site-vitrine">
+        <div class="price-title">
+          <h2>Votre <span>Site Web</span> Sûr-Mesure 🎯</h2>
           <p>
-            Atteignez de nouveaux clients, apprenez de leurs habitudes d’achats
-            et améliorer leur expérience pour les fidéliser
+            Vous accompagner pour développer votre activité, construire une
+            identité numérique qui vous correspond pour transmettre vos valeurs.
           </p>
-          <br />
-          <p>Une étape essentielle de votre tunnel de vente !</p>
-        </div>
-        <div class="price-card-container">
-          <div class="price-card">
-            <h4>E-Commerce</h4>
-            <p>À partir de</p>
-            <span>2 500€</span>
-            <ul>
-              <li>
-                <p>Site Responsive</p>
-              </li>
-              <li>
-                <p>Design 100% personnalisé</p>
-              </li>
-              <li>
-                <p>Référencement SEO</p>
-              </li>
-              <li>
-                <p>Module de paiement sécurisé</p>
-              </li>
-              <li>
-                <p>Formation Spécialisée</p>
-              </li>
-            </ul>
-            <a href="#" class="">Commencer</a>
+          <div class="toggle-section">
+            <p>Vitrine</p>
+            <span class="toggle" id="toggle"></span>
+            <p>E-commerce</p>
           </div>
-          <div class="price-card-2 price-card">
-            <h4>
-              Prestations <br />
-              Supplémentaires
-            </h4>
-            <ul>
-              <li>
-                <p>Maintenance</p>
-              </li>
-              <li>
-                <p>Suivi Analytique</p>
-              </li>
-              <li>
-                <p>Illustration du Site</p>
-              </li>
+        </div>
+        <div class="price-text-card">
+          <div class="price-text">
+            <h3 style="transform: rotate(0deg)">
+              Une
+              <span
+                style="
+                  background-color: #eefbfd;
+                  border-radius: 15px;
+                  color: #1a9dba;
+                  padding: 0 10px;
+                "
+                >vitrine</span
+              >
+              <br />
+              <span class="price-text-orange">adaptée </span>à vos
+              <span>besoins</span>
+            </h3>
+            <p>
+              Vous accompagner pour développer votre activité, construire une
+              <strong>identité numérique</strong> qui vous
+              <strong>correspond</strong> pour transmettre vos valeurs
+            </p>
+            <br />
+            <p>Une étape essentielle de votre tunnel de vente !</p>
+          </div>
+          <div class="price-card-container">
+            <div class="price-card price-card-orange">
+              <h4>Vitrine</h4>
+              <p>À partir de</p>
+              <span>1 500€</span>
+              <ul>
+                <li>
+                  <p>Site Responsive</p>
+                </li>
+                <li>
+                  <p>Design 100% personnalisé</p>
+                </li>
+                <li>
+                  <p>Référencement SEO</p>
+                </li>
+                <li>
+                  <p>Formation Spécialisée</p>
+                </li>
+              </ul>
+              <a href="#" class="">Commencer</a>
+            </div>
+            <div class="price-card-2 price-card price-card-2-orange">
+              <h4>
+                Prestations <br />
+                Supplémentaires
+              </h4>
+              <ul>
+                <li>
+                  <p>Maintenance</p>
+                </li>
+                <li>
+                  <p>Suivi Analytique</p>
+                </li>
+                <li>
+                  <p>Illustration du Site</p>
+                </li>
 
-              <li>
-                <p>Rédaction des contenus</p>
-              </li>
-              <li>
-                <p>???</p>
-              </li>
-            </ul>
-            <a href="#" class="">Et encore +</a>
+                <li>
+                  <p>Rédaction des contenus</p>
+                </li>
+                <li>
+                  <p>???</p>
+                </li>
+              </ul>
+              <a href="#" class="">Et encore +</a>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h3 class="petitPlus-title">Adaptée à <span>vos besoins</span> 🛍️</h3>
+          <p class="petitPlus-text"></p>
+        </div>
+        <div class="petitPlus-container">
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>
+              Prise de <br />
+              Rendez-vous
+            </p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>
+              Rédaction <br />
+              de Blog
+            </p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Module de Recherche & Filtre</p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Prise de Rendez-vous</p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Prise de Rendez-vous</p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Prise de Rendez-vous</p>
           </div>
         </div>
       </div>
-      <div class="petitPlus-container">
-        <div class="petitPlus-card">
-          <img src="" alt="" />
+      <!-- ============= PRICE-Site E-COMMERCE================ -->
+      <div class="e-commerce">
+        <div class="price-title">
+          <h2>Votre <span>Boutique</span> Sûr-Mesure 🎯</h2>
           <p>
-            Prise de <br />
-            Rendez-vous
+            Vos services disponibles <strong>24h/24 & 7j/7</strong> , un moyen à
+            votre portée pour faciliter les achats de vos futurs clients et
+            <strong> augmenter votre chiffre d’affaire.</strong>
           </p>
+          <div class="toggle-section">
+            <p>Vitrine</p>
+            <span class="toggle" id="toggle"></span>
+            <p>E-commerce</p>
+          </div>
         </div>
-        <div class="petitPlus-card">
-          <img src="" alt="" />
-          <p>
-            Rédaction <br />
-            de Blog
-          </p>
+        <div class="price-text-card">
+          <div class="price-text">
+            <h3>
+              <span>Supprimer</span> les
+              <span class="bg-bleu">contraintes</span> géographiques
+            </h3>
+            <p>
+              Atteignez de nouveaux clients, apprenez de leurs habitudes
+              d’achats et améliorer leur expérience pour les fidéliser
+            </p>
+            <br />
+            <p>Une étape essentielle de votre tunnel de vente !</p>
+          </div>
+          <div class="price-card-container">
+            <div class="price-card">
+              <h4>E-Commerce</h4>
+              <p>À partir de</p>
+              <span>2 500€</span>
+              <ul>
+                <li>
+                  <p>Site Responsive</p>
+                </li>
+                <li>
+                  <p>Design 100% personnalisé</p>
+                </li>
+                <li>
+                  <p>Référencement SEO</p>
+                </li>
+                <li>
+                  <p>Module de paiement sécurisé</p>
+                </li>
+                <li>
+                  <p>Formation Spécialisée</p>
+                </li>
+              </ul>
+              <a href="#" class="">Commencer</a>
+            </div>
+            <div class="price-card-2 price-card">
+              <h4>
+                Prestations <br />
+                Supplémentaires
+              </h4>
+              <ul>
+                <li>
+                  <p>Maintenance</p>
+                </li>
+                <li>
+                  <p>Suivi Analytique</p>
+                </li>
+                <li>
+                  <p>Illustration du Site</p>
+                </li>
+
+                <li>
+                  <p>Rédaction des contenus</p>
+                </li>
+                <li>
+                  <p>???</p>
+                </li>
+              </ul>
+              <a href="#" class="">Et encore +</a>
+            </div>
+          </div>
         </div>
-        <div class="petitPlus-card">
-          <img src="" alt="" />
-          <p>Module de Recherche & Filtre</p>
+        <div class="">
+          <h3 class="petitPlus-title">Adaptée à <span>vos besoins</span> 🛍️</h3>
+          <p class="petitPlus-text"></p>
         </div>
-        <div class="petitPlus-card">
-          <img src="" alt="" />
-          <p>Prise de Rendez-vous</p>
-        </div>
-        <div class="petitPlus-card">
-          <img src="" alt="" />
-          <p>Prise de Rendez-vous</p>
-        </div>
-        <div class="petitPlus-card">
-          <img src="" alt="" />
-          <p>Prise de Rendez-vous</p>
+        <div class="petitPlus-container">
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>
+              Prise de <br />
+              Rendez-vous
+            </p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>
+              Rédaction <br />
+              de Blog
+            </p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Module de Recherche & Filtre</p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Prise de Rendez-vous</p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Prise de Rendez-vous</p>
+          </div>
+          <div class="petitPlus-card">
+            <img src="" alt="" />
+            <p>Prise de Rendez-vous</p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- ========================= ACCOMPAGNEMENT========================= -->
     <section class="accompagnement">
       <h2>
         Comment se passe <br />
-        notre <span>Accopagnement</span> ?
+        notre <span>Acconpagnement</span> ?
       </h2>
       <div class="timeline">
         <div class="timeline-container timeline-container-right">
@@ -457,6 +607,52 @@
         </div>
       </div>
     </section>
+    <!-- ========================= Retours Clients========================= -->
+    <section id="projects">
+      <h2>Ce que nos <span>clients</span> disent de nous</h2>
+      <div class="inner">
+        <!-- Les cartes des projets seront affichées ici -->
+      </div>
+    </section>
+    <!-- ========================= FAQ ========================= -->
+    <section id="faq">
+      <h2>On répond à vos <span>questions</span> !</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">Période de production</h3>
+          <div class="accordion-content">
+            <p>
+              Nous vous présentons la solution terminée et validons les derniers
+              détails ensemble. Nous vous formons à l'utilisation de votre
+              plateforme en autonomie ou accompagné. Votre site est en ligne et
+              fonctionnel!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">Période de production</h3>
+          <div class="accordion-content">
+            <p>Contenu de la FAQ 2</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">Période de production</h3>
+          <div class="accordion-content">
+            <p>Contenu de la FAQ 3</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">Période de production</h3>
+          <div class="accordion-content">
+            <p>Contenu de la FAQ 4</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= Contact ======================== -->
+    <section id="contac-section"></section>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -475,9 +671,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="../../components/faq/faq.js"></script>
     <script>
       $(document).ready(function () {
         $(".slider-onSoccupeDuWeb").slick({
+          arrows: false,
           dots: true,
           speed: 900,
           slidesToShow: 4,
@@ -488,8 +686,10 @@
       });
     </script>
     <script src="../../components/header/header.js"></script>
-
+    <script src="../../components/nous_contacter/contact.js"></script>
     <script src="../../components/footer/footer.js"></script>
     <script src="../../components/slider_verticale.js"></script>
+    <script src="../../components/rerour_clients/retourClient.js"></script>
+    <script src="../../scripts/price.js"></script>
   </body>
 </html>

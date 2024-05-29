@@ -1,0 +1,65 @@
+#faq h2 {
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.accordion {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.accordion-item {
+  padding: 0 35px;
+  background: var(--blanc);
+  border-radius: 15px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.accordion-header::after {
+  content: "+";
+  font-size: 1rem;
+  color: var(--bleuLogo);
+  border: 2px solid var(--bleuLogo);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.9s ease;
+}
+.accordion-item.active .accordion-header::after {
+  content: "-";
+  transform: rotate(180deg) !important;
+}
+
+.accordion-content {
+  display: none;
+  padding-bottom: 35px;
+}
+
+.accordion-item.active .accordion-header::after {
+  transform: rotate(90deg);
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}

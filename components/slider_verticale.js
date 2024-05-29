@@ -1,6 +1,7 @@
 const fixedSection = document.querySelector(".fixed-section") || null;
 const cards = document.querySelectorAll(".arguments-card") || [];
-const header = document.querySelector(".text-aguments ") || null; // Sélectionne le h2 à l'intérieur de .fixed-section
+const header = document.querySelector(".text-aguments") || null;
+console.log(header); // Sélectionne le h2 à l'intérieur de .fixed-section
 
 let isFixed = false;
 let lastCardTop = 0;
@@ -17,13 +18,13 @@ if (cards.length && header) {
     const isAtBottom = lastCardDistanceFromBottom <= 150;
 
     // Journalisation des informations pour le débogage
-    console.log("----------------------");
-    console.log("Défilement en cours...");
-    console.log("Position de la première carte :", firstCardDistanceFromTop);
-    console.log("Position de la dernière carte :", lastCardDistanceFromBottom);
-    console.log("isAtTop :", isAtTop);
-    console.log("isAtBottom :", isAtBottom);
-    console.log("isFixed :", isFixed);
+    //console.log("----------------------");
+    //console.log("Défilement en cours...");
+    //console.log("Position de la première carte :", firstCardDistanceFromTop);
+    //console.log("Position de la dernière carte :", lastCardDistanceFromBottom);
+    //console.log("isAtTop :", isAtTop);
+    //console.log("isAtBottom :", isAtBottom);
+    //console.log("isFixed :", isFixed);
 
     if (isAtTop && !isFixed) {
       header.style.position = "sticky";

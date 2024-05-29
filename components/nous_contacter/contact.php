@@ -19,7 +19,7 @@
 
 
 
-<div class="container">
+<div class="">
         <form method="post" name="contactForm">
             <div class="form-group">
                 <label for="name">Nom</label>
