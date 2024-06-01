@@ -262,11 +262,12 @@
   width: 45px;
   background-color: var(--orangeLogo);
   border-radius: 16px;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
   cursor: pointer;
 }
 .toggle::before {
-  content: "";
+  content: "" !important;
   position: absolute;
   top: 50%;
   left: 30%;
@@ -275,7 +276,14 @@
   width: 20px;
   border-radius: 50%;
   background-color: var(--blanc);
-  transition: right 0.2s;
+  transition: transform 0.5s ease-in-out;
+}
+.toggle--slide:before {
+  content: "" !important;
+  transform: translateX(20px);
+}
+.toggle--active {
+  background-color: red !important;
 }
 
 .price-card-container {

@@ -1,18 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const toggles = document.querySelectorAll(".toggle"); // Sélectionner tous les éléments avec la classe toggle
+  const toggles = document.querySelectorAll(".toggle");
   const eCommerce = document.querySelector(".e-commerce");
   const siteVitrine = document.querySelector(".site-vitrine");
 
-  eCommerce.style.display = "none"; // Afficher Vitrine par défaut
-  siteVitrine.style.display = "block"; // Cacher siteVitrine
+  eCommerce.style.display = "none";
+  siteVitrine.style.display = "block";
 
   toggles.forEach((toggle) => {
-    // Ajouter un événement click à chaque élément toggle
-    toggle.addEventListener("click", () => {
-      eCommerce.style.display =
-        eCommerce.style.display === "block" ? "none" : "block";
-      siteVitrine.style.display =
-        siteVitrine.style.display === "block" ? "none" : "block";
+    toggle.addEventListener("click", (event) => {
+      if (siteVitrine.style.display === "block") {
+        eCommerce.style.display = "block";
+        siteVitrine.style.display = "none";
+      } else {
+        eCommerce.style.display = "none";
+        siteVitrine.style.display = "block";
+      }
+
+      toggles.forEach((t) => {
+        t.classList.remove("toggle--slide", "toggle--active");
+      });
+
+      event.target.classList.add("toggle--slide", "toggle--active");
+
+      // Si toggle--slide n'est pas présent, ajoute toggle
+      if (!event.target.classList.contains("toggle--slide")) {
+        event.target.classList.add("toggle");
+      }
     });
   });
 });
