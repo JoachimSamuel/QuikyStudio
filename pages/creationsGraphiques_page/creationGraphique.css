@@ -1,0 +1,89 @@
+.collab-contenair {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 81px;
+  background-color: var(--blanc);
+  width: 630px;
+  height: 348px;
+  border-radius: 75px;
+  box-shadow: 5px 8px 17.3px 0px rgba(13, 121, 146, 0.15);
+  padding: 25px 54px;
+}
+
+.icons-collab-container {
+  display: flex;
+  gap: 13px;
+}
+.icon-collab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(226, 226, 226, 0.31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-collab svg {
+  width: 30px;
+  height: 30px;
+}
+.name-collab {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.6px;
+  border-radius: 13px;
+  padding: 7px 7px;
+}
+.name-collab-img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name-collab-1 {
+  position: absolute;
+  background-color: var(--orangeLogo);
+  bottom: 60px;
+  left: -110px;
+}
+.name-collab-1::after {
+  content: url(../../public/Icons/Polygon\ 22.svg);
+  position: relative;
+  top: -33px;
+  right: -30px;
+}
+
+.name-collab-2 {
+  position: absolute;
+  background-color: var(--maronLogo);
+  bottom: -80px;
+  right: 5px;
+}
+
+.name-collab-2::before {
+  content: url(../../public/Icons/Polygon\ 23.svg);
+  position: relative;
+  top: -33px;
+  left: -30px;
+}
+
+.name-collab-3 {
+  flex-direction: row-reverse;
+  gap: 13px;
+  position: absolute;
+  background-color: var(--bleuLogo);
+  top: 80px;
+  right: -110px;
+}
+
+.name-collab-3::before {
+  content: url(../../public/Icons/Polygon\ 20.svg);
+  position: relative;
+  top: -33px;
+  right: -30px;
+}

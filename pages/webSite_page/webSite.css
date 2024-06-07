@@ -278,12 +278,29 @@
   background-color: var(--blanc);
   transition: transform 0.5s ease-in-out;
 }
+.toogle--slide {
+  appearance: none;
+  position: relative;
+  height: 25px;
+  width: 45px;
+  background-color: var(--bleuLogo);
+  border-radius: 16px;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
 .toggle--slide:before {
   content: "" !important;
-  transform: translateX(20px);
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--blanc);
+  transition: transform 0.5s ease-in-out;
 }
-.toggle--active {
-  background-color: red !important;
+.hidden {
+  display: none;
 }
 
 .price-card-container {
