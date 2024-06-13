@@ -9,9 +9,6 @@
       bien quelqu’un qui est intéressé par votre produit ou service. Encore
       faut-il pouvoir vous trouver ?
     </p>
-    <span>
-      Votre Marque, Notre Mission, Votre Succès <br />On commence quand ?
-    </span>
   </div>
 </div>
 
@@ -27,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="email@gmail.com" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jean@gmail.com" required>
             </div>
             <div class="form-group">
                 <label for="phone">Numéro</label>
@@ -38,7 +35,7 @@
                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
             </div>
             <div class="form-group">
-                <label for="services">Services</label>
+                <label for="services" style="color: var(--orangeLogo)">Services</label>
                 <div class="form-list-input">
                     <div class="list-1">
                         <div class="form-check">
@@ -78,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="form-btn">Get started</button>
+            <button type="submit" class="form-btn">Envoyer</button>
         </form>
 </div>
 

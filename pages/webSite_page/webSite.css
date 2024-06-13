@@ -5,7 +5,9 @@
 .hero-section-siteWeb h2 {
   margin-bottom: 28px;
 }
-
+.hero-section-siteWeb p {
+  font-family: "Inter";
+}
 /*Creation de l'ecrand d'ordinateur */
 .ecrand-ordi {
   background-color: var(--blanc);
@@ -184,8 +186,9 @@
 }
 
 .text-aguments p {
-  margin-top: 60px;
+  margin-top: 40px;
   font-weight: 600;
+  font-family: "Inter";
 }
 /******** Section des cartes ********/
 .arguments-card {
@@ -221,16 +224,18 @@
 .arguments-card-content p {
   margin-top: 10px;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
 }
-
+.arguments-card-content strong {
+  color: var(--bleuLogo);
+}
 /******************************************* PRICE ********************************************/
 .hidden {
   display: none;
 }
 .price {
   flex-direction: column;
-  align-items: flex-start;
+  padding: 64px 0px;
 
   gap: 50px;
 }
@@ -246,6 +251,10 @@
   margin: 0 275px;
   margin-top: 22px;
   margin-bottom: 25px;
+  font-family: "Inter";
+}
+.price-title strong {
+  font-family: "Inter";
 }
 .toggle-section {
   display: flex;
@@ -307,13 +316,18 @@
   display: flex;
   gap: 24px;
 }
-
+.price-text p {
+  font-family: "Inter";
+}
+.price-text p strong {
+  font-family: "Inter";
+}
 .price-text-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .price-text {
-  width: 40%;
+  width: 30%;
 }
 .price-text h3 {
   color: var(--bleuLogo);
@@ -321,7 +335,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 45px;
-  margin-bottom: 35px;
+  margin-bottom: 72px;
   transform: rotate(-1.72deg);
 }
 .price-text h3 span {
@@ -340,16 +354,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  color: var(--bleuClaire);
-  padding: 30px 35px;
-  max-width: 318px;
-  max-height: 476px;
+  color: var(--blanc);
+  width: 318px;
+  height: 476px;
 }
 .price-card-orange {
   background-color: var(--orangeLogo);
-  padding: 30px 35px;
-  max-width: 318px;
-  max-height: 476px;
+  width: 318px;
+  height: 476px;
 }
 .price-card h4 {
   font-family: "Inter", sans-serif;
@@ -363,8 +375,8 @@
   font-size: 48px;
   text-align: center;
   font-weight: 600;
-  border-bottom: 0.1px var(--bleuClaire) solid;
-  width: 150%;
+
+  width: 140%;
   padding-bottom: 10px;
 }
 .price-card span::after {
@@ -385,17 +397,17 @@
 }
 .price-card li {
   font-family: "Inter", sans-serif;
-  margin-bottom: 12.5px;
+  margin-bottom: 15px;
 }
 .price-card ul li p::before {
   content: url(../../public/Icons/white_dote.svg);
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .price-card a {
   background-color: var(--bleuClaire);
   color: var(--bleuLogo);
-  padding: 16px 24px;
+  padding: 16px 52px;
   border-radius: 8px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -414,11 +426,11 @@
   background-color: var(--bleuClaire);
   color: var(--noir);
   text-align: center;
-  padding: 30px 35px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   opacity: 0.9;
-  max-width: 318px;
-  max-height: 476px;
+  width: 318px;
+  height: 476px;
+  border: 1px solid #d4f5f9;
 }
 .price-card-2 ul li p::before {
   content: url(../../public/Icons/bleu_dote.svg);
@@ -430,6 +442,7 @@
 }
 .price-card-2-orange {
   background-color: #fff6e5;
+  border: 1px solid rgba(255, 235, 196, 1);
 }
 .price-card-2-orange ul li p::before {
   content: url(../../public/Icons/orange_plus.svg);
@@ -442,7 +455,8 @@
 .petitPlus-title {
   font-size: 37px;
   color: var(--bleuLogo);
-  margin-left: 14px;
+  margin-left: 34px;
+  margin-top: 69px;
   margin-bottom: 40px;
 }
 .petitPlus-title span {
@@ -461,9 +475,11 @@
   padding: 24px 7px;
   text-align: center;
   font-size: 16px;
-  font-weight: 500;
 }
-
+.petitPlus-card p {
+  font-family: "Inter";
+  font-weight: 600;
+}
 /******************************************* NOTRE ACCOMPAGNEMENT ********************************************/
 .accompagnement {
   margin-top: 8rem;
@@ -502,23 +518,23 @@
 .timeline-text-box span {
   color: #007999;
   font-size: 33.07px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 28.8px; /* 87.088% */
 }
 .timeline-text-box p {
   color: var(--noir);
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 .timeline-text-box-left {
   text-align: right;
   padding-right: 3rem;
-  padding-left: 5rem;
+  padding-left: 10rem;
 }
 .timeline-text-box-right {
   padding-left: 3em;
-  padding-right: 5rem;
+  padding-right: 10rem;
 }
 .timeline-container-left {
   padding-left: 0;

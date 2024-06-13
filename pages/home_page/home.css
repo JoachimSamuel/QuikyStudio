@@ -3,8 +3,8 @@
 /*Creation de l'ecrand d'ordinateur */
 .ecrand-ordi {
   background-color: var(--blanc);
-  width: 80vw;
-  aspect-ratio: 16/9;
+  width: 1117px;
+  height: 684px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4.5rem;
@@ -89,22 +89,25 @@
 
 .content-ecrand {
   display: flex;
-  gap: 93px;
+  gap: 90px;
   padding: 87px;
 }
 
-.content-ecrand-right-gouteLogo {
-  width: 25.461px;
-  height: 29.233px;
-  transform: rotate(4.627deg);
-  position: absolute;
-}
 .content-ecrand-right-title {
   flex-shrink: 0;
 }
 .content-ecrand-right h2 {
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
+  position: relative;
+}
+.content-ecrand-right h2::after {
+  content: url("/public/Logo/goutes_maron.svg");
+  position: absolute;
+  width: 25px;
+  height: 29px;
+  top: 45px;
+  right: 43px;
 }
 .content-ecrand-right p {
   font-family: "Inter", sans-serif;
@@ -122,13 +125,13 @@
 
 .hero-tel-1 {
   position: absolute;
-  top: 50%;
-  right: 1%;
+  top: 66%;
+  right: 4%;
 }
 .hero-tel-2 {
   position: absolute;
-  top: 25%;
-  left: 1%;
+  top: 23%;
+  left: 2%;
 }
 
 /******************************************* NOTRE MISSION ********************************************/
@@ -137,7 +140,8 @@
 
 /******** Notre Mission ********/
 .container-mission {
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-top: 0px;
 }
 .text-mission {
   display: flex;
@@ -146,8 +150,8 @@
   text-align: left;
 }
 .text-mission button {
-  width: 25%;
-  margin: 0 30%;
+  width: 30%;
+  margin: 0 40%;
   padding: 13px 19px;
 
   color: var(--blanc);
@@ -167,6 +171,10 @@
 /******** CHIFFRE********/
 .container-chiffre {
   display: flex;
+  gap: 102px;
+}
+.chiffre-cle {
+  margin-top: 3px;
 }
 .chiffre-cle span {
   color: var(--orangeLogo);
@@ -177,7 +185,9 @@
   margin-top: 25px;
 }
 .chiffre-cle p {
-  width: 60%;
+  margin-top: 9px;
+  margin-bottom: 35px;
+  max-width: 206px;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px; /* 133.333% */
@@ -193,6 +203,11 @@
 }
 .nosService-title p {
   margin-bottom: 16px;
+  font-family: "Inter";
+}
+.paragraphe-deux strong {
+  font-family: "Inter";
+  font-style: italic;
 }
 
 /******** Section des cartes ********/
@@ -201,7 +216,7 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 100px;
 }
@@ -272,6 +287,9 @@
   background-color: var(--orangeLogo);
 }
 .text-transition-cool {
+  font-family: "Inter";
+  font-weight: 500;
+
   color: var(--bleuLogo);
   margin-top: 53px;
 }
@@ -280,7 +298,7 @@
 .conatiner-team {
   flex-direction: column;
   gap: 50px;
-  padding-right: 0.5rem;
+  padding: 32px;
 }
 .conatiner-team button {
   font-family: "Inter", sans-serif;
@@ -294,7 +312,7 @@
 }
 .team-container {
   display: flex;
-  gap: 20px;
+  gap: 33px;
   width: 50%;
 }
 .team-container img {
@@ -322,6 +340,8 @@
   letter-spacing: -0.32px;
 }
 .team-post {
+  color: #514f4f;
+
   font-style: 14px !important;
   font-weight: 600 !important;
 }
@@ -336,16 +356,17 @@
   font-size: 15px;
   font-weight: 300;
   line-height: 27px; /* 180% */
+  letter-spacing: 0px;
   background-color: var(--bleuClaire);
   text-align: center;
   border-radius: 27px;
   margin: 0;
-  padding: 0px 15px;
+  padding: 5px 9px;
 }
 .team-text a p {
-  margin-top: 1.5rem;
+  font-family: "Inter";
   color: var(--bleuLogo);
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
 }
 .team-tags p::first-letter {
@@ -408,9 +429,11 @@
 }
 .subscribe-newsletter h2 {
   color: var(--blanc);
+  font-size: 50px;
 }
 .form-newsletter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 13px;
 }
@@ -426,6 +449,7 @@
 .form-newsletter #email::placeholder,
 .form-newsletter #name::placeholder {
   color: var(--blanc);
+  opacity: 0.6;
 }
 
 .form-newsletter button {
@@ -436,4 +460,124 @@
   padding: 23px;
   border-radius: 10px;
   width: 271px;
+}
+
+/******************************************* RESPONCIVE ********************************************/
+/* Mobile styles */
+@media (max-width: 480px) {
+  /* styles for large mobile screens */
+
+  .hero {
+    display: none;
+  }
+
+  .container-mission {
+    padding: 0 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+  .text-mission {
+    text-align: center;
+  }
+  .container-chiffre {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .chiffre-cle p {
+    max-width: 30ch;
+    font-weight: 700;
+    margin-top: 9px;
+  }
+  .text-mission button {
+    margin: 0 auto;
+    width: 50%;
+  }
+  /*************** NOS SERVICES*****************/
+  #nosService {
+    padding: 0 25px;
+  }
+  .container-nosServices-card {
+    gap: 100px;
+    width: 100%;
+  }
+  /*************** TEAMS *****************/
+  .conatiner-team {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 48px;
+    gap: 0;
+    width: 100%;
+  }
+  .conatiner-team h2 {
+    text-align: center;
+    padding: 46px 70px 0 70px;
+  }
+  .card-team {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+  .team-container {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .team-container img {
+    transform: rotate(0deg);
+  }
+  .team-text {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .team-text p {
+    padding: 0 25px;
+  }
+  .team-text h3 {
+    margin-bottom: -15px;
+  }
+  .team-tags {
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .team-tags p {
+    padding: 5px 9px;
+  }
+  /*************** PROJETS *****************/
+  .porjets-container h2 {
+    margin-bottom: 3px;
+  }
+  .btn-nosRealisation {
+    margin-top: 30px;
+  }
+  /*************** RETOURS CLIENTS *****************/
+
+  /*************** NEWSLETTER *****************/
+  .subscribe-newsletter h2 {
+    text-align: center;
+    padding: 0 30px;
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+  .form-newsletter {
+    justify-content: center;
+  }
+
+  .subscribe-newsletter::before,
+  .subscribe-newsletter::after {
+    opacity: 0.5;
+  }
+  .form-newsletter input {
+    width: 70%;
+  }
+  .form-newsletter button {
+    margin-top: 24px;
+    width: 80%;
+  }
 }

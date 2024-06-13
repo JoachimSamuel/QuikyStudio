@@ -7,12 +7,42 @@
     <title>Document</title>
 
     <!--Import CSS -->
-    <link href="./style/global.css" rel="stylesheet" />
-    <link href="./style/header.css" rel="stylesheet" />
-    <link href="./style/footer.css" rel="stylesheet" />
+    <link href="../../style/global.css" rel="stylesheet" />
+    <link href="../../components/header/header.css" rel="stylesheet" />
+    <link href="../../components/footer/footer.css" rel="stylesheet" />
 
     <link href="./nosProjets.css" rel="stylesheet" />
   </head>
 
-  <body></body>
+  <body>
+    <div class="projet-titel">
+      <h2>Nos <span>Projets</span></h2>
+      <p>
+        Quelques unes de nos réalisations sur <br />lesquelles nous avons
+        travaillé avec ❤️ pour nos clients.
+      </p>
+    </div>
+    <div class="filtrage">
+      <button class="btn-filtrer" data-categorie="tous">Tous</button>
+      <button class="btn-filtrer" data-categorie="Site Vitrine">
+        Site Vitrine
+      </button>
+      <button class="btn-filtrer" data-categorie="E-Commerce">
+        E-Commerce
+      </button>
+      <button class="btn-filtrer" data-categorie="conception-graphique">
+        Conception graphique
+      </button>
+      <button class="btn-filtrer" data-categorie="gestion-communaute">
+        Gestion de communauté
+      </button>
+    </div>
+    <div id="card-projet-container"></div>
+
+    <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script src="../../scripts/scrollAnimation.js"></script>
+    <script src="../../components/header/header.js"></script>
+    <script src="/pages/nosProjets_page/projet.js"></script>
+    <script src="/components/footer/footer.js"></script>
+  </body>
 </html>

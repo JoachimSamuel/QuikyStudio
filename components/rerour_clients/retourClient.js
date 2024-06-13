@@ -2,7 +2,7 @@
 
 const retourClients = [
   {
-    stars: 4,
+    stars: 1,
     comment:
       "We love Landingfolio! Our designers were using it for their projects, so we already knew what kind of design they want.",
     name: "Hotel Innsbruck",
@@ -73,7 +73,7 @@ retourClients.forEach((retourClient, index) => {
     retourClient.name
   }" class="client-image">
     </div>
-    <div style="display: flex; flex-direction: column; padding: 5px; justify-content: space-between">
+    <div style="display: flex; flex-direction: column; padding: 5px;  gap: 25px;">
       <div class="rating">
         ${Array.from({ length: 5 }, (_, i) => {
           const rating = i + 1;
@@ -98,8 +98,6 @@ $(document).ready(function () {
   $(".inner").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: false,
-    dots: false,
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 5000,

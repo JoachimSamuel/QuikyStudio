@@ -13,6 +13,7 @@
   color: var(--blanc);
   text-align: center;
   margin: 1.5rem;
+  position: relative;
 }
 .porjets-container h2 span {
   color: var(--orangeLogo);
@@ -20,7 +21,16 @@
   border-radius: 15px;
   padding: 0rem 0.6rem;
 }
+.porjets-container h2::after {
+  content: url(/public/Logo/goute°quiky_beige.svg);
+  position: absolute;
+  width: 25px;
+  height: 29px;
+  top: -20px;
+  right: -20px;
+}
 .porjets-container p {
+  font-family: "Inter";
   color: var(--blanc);
   text-align: center;
   margin-top: 1rem;

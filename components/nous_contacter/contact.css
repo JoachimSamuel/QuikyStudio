@@ -36,31 +36,46 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
-  gap: 5px;
+  gap: 18px;
+}
+.list-1,
+.list-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group label {
+  font-family: "Inter";
 }
 input {
   border: none;
-  border-bottom: 1px var(--noir) solid;
+  border-bottom: 1px #959595 solid;
+  opacity: 0.5;
 }
 .form-list-input {
   display: flex;
   gap: 3rem;
   justify-content: space-around;
 }
-
-.test {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+textarea {
+  border: 1px #959595 solid;
+  opacity: 0.5;
+  border-radius: 12px;
 }
+.form-check-label {
+  margin-left: 4px;
+}
+
 .form-btn {
   width: 100%;
+  border-radius: 8px;
   background-color: var(--orangeLogo);
   color: var(--blanc);
+  border: 1px solid var(--orangeLogo);
 }
-
 .form-btn:hover {
   background-color: var(--blanc);
-  border: 1px var(--orangeLogo);
+  border: 1px var(--orangeLogo) solid;
   color: var(--orangeLogo);
 }

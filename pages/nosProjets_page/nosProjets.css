@@ -1,0 +1,66 @@
+.projet-titel {
+  text-align: center;
+  margin-top: 100px;
+}
+.projet-titel h2 {
+  margin-bottom: 38px;
+}
+.projet-titel p {
+  font-family: "Inter";
+  font-weight: 500;
+}
+.filtrage {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.btn-filtrer {
+  font-family: "Inter";
+  font-size: 15px;
+  background-color: transparent;
+  border: #cae2e6 1px solid;
+  font-weight: 300;
+}
+.btn-filtrer-active {
+  color: white;
+  background-color: var(--bleuLogo);
+  font-weight: 400;
+}
+
+#card-projet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 60px;
+}
+.card-projet img {
+  width: 400px;
+  aspect-ratio: 16/9;
+
+  border-radius: 20px;
+}
+.card-projet-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: "Inter";
+}
+
+.card-projet-text p {
+  font-size: 14px;
+}
+.card-projet-text-categorie {
+  color: #737373;
+}
+.card-projet-text img {
+  width: 20px;
+  height: 20px;
+}
+.card-text-entreprise {
+  display: flex;
+  gap: 7px;
+}

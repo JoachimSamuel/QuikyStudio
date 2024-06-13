@@ -6,10 +6,10 @@
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(2px);
   display: flex;
-  padding: 10px;
+  padding: 22px 83px;
   justify-content: space-around;
   align-items: center;
-  gap: 250px;
+  gap: 240px;
   z-index: 9999999999999;
 }
 
@@ -22,8 +22,9 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 99px;
-  gap: 10px;
-  padding: 4px 10px;
+  gap: 13px;
+  padding: 11px;
+  background: #f0fdff;
 }
 li {
   list-style: none;

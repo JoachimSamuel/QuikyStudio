@@ -2,6 +2,6 @@
 
 $(document).ready(function () {
   $(".counter").counterUp({
-    time: 2200,
+    time: 1500,
   });
 });
