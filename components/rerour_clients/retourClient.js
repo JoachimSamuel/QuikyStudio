@@ -73,7 +73,7 @@ retourClients.forEach((retourClient, index) => {
     retourClient.name
   }" class="client-image">
     </div>
-    <div style="display: flex; flex-direction: column; padding: 5px;  gap: 25px;">
+    <div class="card-carrouse-text">
       <div class="rating">
         ${Array.from({ length: 5 }, (_, i) => {
           const rating = i + 1;
@@ -101,5 +101,17 @@ $(document).ready(function () {
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1200, // taille d'écran maximale pour les mobiles
+        settings: {
+          slidesToShow: 1, // afficher une seule carte sur mobile
+          slidesToScroll: 1,
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 5000,
+        },
+      },
+    ],
   });
 });

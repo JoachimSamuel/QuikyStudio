@@ -1,5 +1,6 @@
 #contac-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 }
@@ -78,4 +79,17 @@ textarea {
   background-color: var(--blanc);
   border: 1px var(--orangeLogo) solid;
   color: var(--orangeLogo);
+}
+
+/******************************************* RESPONCIVE ********************************************/
+/* Mobile styles */
+@media (max-width: 480px) {
+  .contac-text-container {
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+  }
+  .text-contact p {
+    text-align: justify;
+  }
 }

@@ -217,8 +217,10 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin-top: 100px;
+}
+.slick-list {
+  overflow: visible !important;
 }
 .card-nosServices {
   position: relative;
@@ -230,6 +232,7 @@
   background-color: var(--blanc);
   padding: 25px;
   padding-top: 74px;
+  width: 291px;
 }
 .icon-card {
   display: flex;
@@ -482,26 +485,59 @@
     text-align: center;
   }
   .container-chiffre {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
+    gap: 20px;
   }
   .chiffre-cle p {
+    font-size: 14px;
     max-width: 30ch;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 9px;
   }
+
   .text-mission button {
     margin: 0 auto;
     width: 50%;
   }
   /*************** NOS SERVICES*****************/
   #nosService {
-    padding: 0 25px;
+    padding: 0 0px;
+    width: 100%;
+  }
+  .nosService-title {
+    padding: 0 30px;
   }
   .container-nosServices-card {
     gap: 100px;
     width: 100%;
+    margin: 100px 0px;
+  }
+  .card-nosServices {
+    margin: 0 45px !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .slick-dots {
+    margin-top: 30px !important;
+    bottom: -30px !important;
+  }
+
+  .slick-dots li {
+    margin: 0px !important;
+  }
+  .slick-dots li button:before {
+    opacity: 0.4 !important;
+    color: var(--bleuLogo) !important ;
+    font-size: 8px !important;
+    color: var(--bleuLogo);
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: var(--bleuLogo) !important;
+  }
+
+  .text-transition-cool {
+    padding: 0 30px;
   }
   /*************** TEAMS *****************/
   .conatiner-team {
@@ -513,7 +549,7 @@
   }
   .conatiner-team h2 {
     text-align: center;
-    padding: 46px 70px 0 70px;
+    padding: 46px 60px 0 60px;
   }
   .card-team {
     flex-direction: column;
@@ -579,5 +615,12 @@
   .form-newsletter button {
     margin-top: 24px;
     width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* styles for standard mobile screens */
+  .conatiner-team h2 {
+    padding: 30px;
   }
 }
