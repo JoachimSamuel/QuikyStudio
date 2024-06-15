@@ -7,7 +7,7 @@ const retourClients = [
       "We love Landingfolio! Our designers were using it for their projects, so we already knew what kind of design they want.",
     name: "Hotel Innsbruck",
     business: "Manager",
-    photo: "../../public/images/nina.png",
+    photo: "https://joachimsamuel.github.io/QuikyStudio/public/images/nina.png",
     category: "site web",
   },
   {
