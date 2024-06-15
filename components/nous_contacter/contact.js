@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("/components/nous_contacter/contact.php")
+  fetch("./components/nous_contacter/contact.php")
     .then((response) => response.text())
     .then((data) => {
       // Sélectionnez l'élément où vous voulez insérer le footer
