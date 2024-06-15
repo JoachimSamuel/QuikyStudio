@@ -212,7 +212,7 @@
 
 /******** Section des cartes ********/
 .container-nosServices-card {
-  background-image: url("/public/Icons/ligne_background.svg");
+  background-image: url("public/Icons/ligne_background.svg");
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
