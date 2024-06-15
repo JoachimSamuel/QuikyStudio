@@ -11,6 +11,7 @@
 }
 .filtrage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 9px;
   margin-top: 60px;
@@ -63,4 +64,20 @@
 .card-text-entreprise {
   display: flex;
   gap: 7px;
+}
+
+/******************************************* RESPONCIVE ********************************************/
+/* Mobile styles */
+@media (max-width: 480px) {
+  /* styles for large mobile screens */
+
+  .projet-titel h2 {
+    margin-bottom: 28px;
+  }
+  .card-projet {
+    width: 80%;
+  }
+  .card-projet img {
+    width: 100%;
+  }
 }

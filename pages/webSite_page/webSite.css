@@ -688,6 +688,7 @@
   .timeline-text-box p {
     width: 100%;
   }
-  .timeline-container:lastchild {
+  .timeline-container:last-child {
+    padding-bottom: 1rem;
   }
 }
