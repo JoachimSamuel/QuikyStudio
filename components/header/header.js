@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch(
-    "https://joachimsamuel.github.io/QuikyStudio/components/header/header.html"
-  )
+  fetch("/components/header/header.html")
     .then((response) => response.text())
     .then((data) => {
       document.body.insertAdjacentHTML("afterbegin", data);
