@@ -1,1 +1,1 @@
-# QuikuyStudio
+# QuikyStudio
