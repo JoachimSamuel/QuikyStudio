@@ -20,7 +20,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: var(--bleuClaire);
+  background-color: var(--bleuClaire) !important;
   color: var(--noir);
   overflow-x: hidden;
 }
