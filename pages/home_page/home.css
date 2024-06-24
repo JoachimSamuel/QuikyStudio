@@ -1,3 +1,137 @@
+/*CSS Globale pour toutes les pages  du site ( font , couleurs etc.)*/
+
+/*Import des polices pour tout le site*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Mise en place des varaibles couleur pour tout le site*/
+:root {
+  --bleuClaire: rgba(240, 253, 255, 1);
+  --bleuLogo: rgba(26, 157, 186, 1);
+  --orangeClaire: rgba(255, 246, 229, 1);
+  --orangeLogo: rgba(255, 153, 0, 1);
+  --noir: rgba(14, 46, 62, 1);
+  --blanc: #fff;
+  --maronLogo: rgba(203, 97, 0, 1);
+  --bleuSlider: rgba(0, 121, 153, 1);
+}
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--bleuClaire) !important;
+  color: var(--noir);
+  overflow-x: hidden;
+}
+
+h2 {
+  color: var(--bleuLogo);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 115.167%;
+  letter-spacing: -1.7px;
+}
+h2 span {
+  color: var(--orangeLogo);
+  background-color: var(--blanc);
+  border-radius: 15px;
+  padding: 0 0.6rem;
+}
+p {
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 400;
+}
+a {
+  color: var(--noir);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: 600;
+}
+/* Gestion des Buttons */
+button {
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  padding: 9px 12px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+button:hover {
+  cursor: pointer;
+}
+.button-bleu {
+  color: var(--blanc);
+  background-color: var(--bleuLogo);
+}
+.button-white-orange {
+  color: var(--orangeLogo);
+  background-color: var(--blanc);
+  border: solid 1px var(--orangeLogo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Gestion des Section*/
+section {
+  margin-bottom: 100px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+  margin: 0 auto;
+  border-radius: 46px;
+  background-color: var(--blanc);
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.rond-fleche-bas {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--blanc);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+.arrow-down {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/******************************************* RESPONCIVE ********************************************/
+/* Mobile styles */
+@media (max-width: 480px) {
+  /* styles for large mobile screens */
+  h2 {
+    font-size: 41px;
+  }
+
+  .container {
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /***************** HERO SECTION ******************/
 
 /*Creation de l'ecrand d'ordinateur */
